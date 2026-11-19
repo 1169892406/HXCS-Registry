@@ -1,0 +1,142 @@
+{
+  "registry_version": "1",
+  "updated_at": "2026-11-19T07:37:49Z",
+  "trust_root": {
+    "key_id": "hxcs-community",
+    "public_key_b64": "sIj14U1dua4pFbC9/PZN7ehtmI/ICHlO6CS1SMkMXbI=",
+    "algorithm": "ed25519",
+    "fingerprint": "a7376a3d1a8522a8"
+  },
+  "plugins": [
+    {
+      "plugin_id": "homex.weather_msn",
+      "name": "MSN 天气",
+      "version": "1.2.5",
+      "type": "prebuilt",
+      "description": "MSN 天气数据源：实时天气 + 逐小时 + 每日预报，自动定位或手动选城市。",
+      "package_url": "plugins/msn-weather/releases/homex.weather_msn-1.2.5.hpkg",
+      "source_repo": "https://github.com/1169892406/hx_msn_weather",
+      "license": "MIT",
+      "publisher": {
+        "id": "hx-community",
+        "display_name": "HX Community"
+      },
+      "permissions": [
+        "network.outbound",
+        "config.read"
+      ],
+      "package_sha256": "3b8368d4b9c2dc7c665448e6852493eb58e20922491ffdaabb306d94d8d00327",
+      "github_stars": 1
+    },
+    {
+      "plugin_id": "homex.xiaomi_miot",
+      "name": "HX-MI",
+      "version": "2.0.0-alpha.159",
+      "type": "prebuilt",
+      "description": "小米米家设备接入：账号登录、云端同步、局域网探测、多账号管理。",
+      "package_url": "plugins/hx-mi/releases/homex.xiaomi_miot-2.0.0-alpha.159.hpkg",
+      "source_repo": "https://github.com/1169892406/HX-MI",
+      "license": "MIT",
+      "publisher": {
+        "id": "hx-community",
+        "display_name": "HX Community"
+      },
+      "permissions": [
+        "network.outbound",
+        "network.datagram",
+        "network.mqtt",
+        "driver.register",
+        "secret.read",
+        "storage.read",
+        "storage.write",
+        "schedule.create",
+        "migration.read",
+        "cookie.ticket",
+        "secret.blob",
+        "migration.device_secret",
+        "config.read",
+        "event.publish",
+        "event.subscribe"
+      ],
+      "package_sha256": "46042acc7b1c6d404a6612799d33a2e711a3700ad496d2baf0c0edba289ee86b",
+      "github_stars": 1
+    },
+    {
+      "plugin_id": "midea_ac_lan",
+      "name": "Midea AC LAN",
+      "version": "2026.10.0",
+      "type": "ha_integration",
+      "description": "美的空调局域网控制集成：自动发现或手动添加设备，支持空调/风扇/灯光/加湿器等实体，无需云端。",
+      "package_url": "plugins/midea-ac-lan/releases/midea_ac_lan-2026.10.0.zip",
+      "source_repo": "https://github.com/wuwentao/midea_ac_lan",
+      "license": "MIT",
+      "publisher": {
+        "id": "hx-community",
+        "display_name": "HX Community"
+      },
+      "permissions": [
+        "network.lan"
+      ],
+      "package_sha256": "0b1e335bdd9a2a1fd488f55b02965da77ac37053de263c6c702c67800075fa50",
+      "github_stars": 1930
+    },
+    {
+      "plugin_id": "homex.hxcs",
+      "name": "HXCS 社区商店",
+      "version": "1.0.20",
+      "type": "prebuilt",
+      "description": "HOMEX Community Store：社区插件商店 + HA 兼容运行时。安装后在配置页开启「社区插件」显示社区注册表中的第三方插件；开启「兼容 HA 插件」后支持加载社区注册表中的 HA 集成。",
+      "package_url": "plugins/hxcs/releases/homex.hxcs-1.0.20.hpkg",
+      "source_repo": "https://github.com/1169892406/HXCS",
+      "license": "MIT",
+      "github_stars": 1,
+      "publisher": {
+        "id": "hx-community",
+        "display_name": "HX Community"
+      },
+      "permissions": [
+        "network.outbound",
+        "config.read"
+      ],
+      "package_sha256": "3dde260f86cdeedde090389e3857d3d2e5179ab356434c1165ec1c5f9d49cecf"
+    },
+    {
+      "plugin_id": "hx.mqtt_broker",
+      "name": "HX-Mqtt Broker",
+      "version": "1.1.1",
+      "type": "prebuilt",
+      "description": "平台内置 MQTT 消息总线：随主服务加载，无独立进程、无独立监听端口，支持热加载。设备状态/事件/命令经它统一分发，插件侧用 SDK 高层接口接入，无需配置地址与凭据。",
+      "package_url": "plugins/mqtt-broker/releases/hx.mqtt_broker-1.1.1.hpkg",
+      "source_repo": "https://github.com/1169892406/HXCS",
+      "license": "MIT",
+      "publisher": {
+        "id": "homex",
+        "display_name": "HOMEX"
+      },
+      "permissions": [
+        "config.read"
+      ],
+      "package_sha256": "ee006080848583853fb54ae3be17fa052b09fe86a960da9479827362e5a00c9f",
+      "github_stars": 0
+    },
+    {
+      "plugin_id": "hx.sanotts",
+      "name": "本地播报 · sanoTTS",
+      "version": "1.0.2",
+      "type": "prebuilt",
+      "description": "本地中文语音播报：一句话在本机合成成 WAV，完全离线、不联网、不上传文本。引擎是 sanoTTS 中文语音包（1.55M 参数，piperlite 图），推理用插件自带的 C 内核（无 numpy、无 Python 依赖），音色为标准普通话「小雅」。工具 speak / audio_chunk / voices / status，插件自带配置页可直接试听。单次播报上限 108 字（模型 432 个音素 id、中文每字 4 个），超限明确报错并提示拆分。",
+      "package_url": "plugins/sanotts/releases/hx.sanotts-1.0.2.hpkg",
+      "source_repo": "https://github.com/1169892406/HX-SANOTTS",
+      "license": "GPL-3.0",
+      "publisher": {
+        "id": "hx-community",
+        "display_name": "HX Community"
+      },
+      "permissions": [
+        "config.read"
+      ],
+      "package_sha256": "9f678b01f712db12852e8c2e19e8f5ac2ebe6b52f283c14c7bce30178f8ea8a8",
+      "github_stars": 1
+    }
+  ]
+}
