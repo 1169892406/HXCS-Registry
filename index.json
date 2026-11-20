@@ -1,6 +1,6 @@
 {
   "registry_version": "1",
-  "updated_at": "2026-11-20T05:25:00Z",
+  "updated_at": "2026-11-20T05:35:00Z",
   "trust_root": {
     "key_id": "hxcs-community",
     "public_key_b64": "sIj14U1dua4pFbC9/PZN7ehtmI/ICHlO6CS1SMkMXbI=",
@@ -58,7 +58,7 @@
         "event.publish",
         "event.subscribe"
       ],
-      "package_sha256": "3979e4bb93618bbd29d0f466494239af6911004dc93d79d7ede4ebd498b5a001",
+      "package_sha256": "fb693669da374517605924ef726c962c8a0f7fc1a797b00a64c4107a23d97680",
       "github_stars": 1
     },
     {
