@@ -1,6 +1,6 @@
 {
   "registry_version": "1",
-  "updated_at": "2026-11-22T09:37:24Z",
+  "updated_at": "2026-11-22T10:51:18Z",
   "trust_root": {
     "key_id": "hxcs-community",
     "public_key_b64": "sIj14U1dua4pFbC9/PZN7ehtmI/ICHlO6CS1SMkMXbI=",
@@ -83,10 +83,10 @@
     {
       "plugin_id": "homex.hxcs",
       "name": "HXCS 社区商店",
-      "version": "1.1.1",
+      "version": "1.1.2",
       "type": "prebuilt",
       "description": "社区插件商店 + HA 兼容运行时。新增「注册表自动维护」：自动检测各插件仓库的新版本，按设定把新版本写回注册表（默认仅检测不推送）。",
-      "package_url": "plugins/hxcs/releases/homex.hxcs-1.1.1.hpkg",
+      "package_url": "plugins/hxcs/releases/homex.hxcs-1.1.2.hpkg",
       "source_repo": "https://github.com/1169892406/HXCS",
       "license": "MIT",
       "github_stars": 1,
@@ -98,7 +98,7 @@
         "network.outbound",
         "config.read"
       ],
-      "package_sha256": "fb027ec45ba61638459219a85409b3df9c09f6c7ffbc69370cbbd940f6bbe797"
+      "package_sha256": "aa789884624539028af041f09da4bd74efa5e49c71cac01a93a21580b3a0a56c"
     },
     {
       "plugin_id": "hx.mqtt_broker",
